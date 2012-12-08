@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mywebservice.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://mywebservice.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:portType name="webserviceSoap" />
+  <wsdl:portType name="webserviceSoap12" />
+  <wsdl:binding name="webserviceSoap" type="tns:webserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+  </wsdl:binding>
+  <wsdl:binding name="webserviceSoap12" type="tns:webserviceSoap12">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+  </wsdl:binding>
+  <wsdl:service name="webservice">
+    <wsdl:port name="webserviceSoap" binding="tns:webserviceSoap">
+      <soap:address location="http://localhost:2497/webservice/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webserviceSoap12" binding="tns:webserviceSoap12">
+      <soap12:address location="http://localhost:2497/webservice/webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

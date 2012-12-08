@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMain.master.cs" Inherits="MyProject.MyMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <title>Smart Shoppy</title>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>    
+    <script type="text/javascript">
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+<style type="text/css">
+        .style2
+        {
+            height: 23px;
+            width: 699px;
+        }
+        .style5
+        {
+            width: 699px;
+        text-align: center;
+    }
+        .style6
+    {
+        width: 157px;
+        height: 114px;
+    }
+    .style7
+    {
+        font-size: xx-large;
+    }
+    .style8
+    {
+        width: 674px;
+    }
+    .style9
+    {
+        height: 151px;
+    }
+    </style>
+    </head>
+<body background="Background-LARGE.png" topmargin="70" leftmargin="100" rightmargin="100">
+    <form id="form1" runat="server">
+    <div> <table style="width:100%;">
+                <tr>
+                    <td bgcolor="#669900" class="style5" 
+                        
+                        style="font-size: large; font-style: italic; font-weight: bold; color: #000080;" 
+                        align="left" valign="top">
+                        <img align="left" alt="" class="style6" src="edit e.bmp" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="style7">Smart Shoppy</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        ...Buy Goods in A Smarter Way<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#003300" class="style2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder2" 
+                            runat="server">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#003300" 
+                            ForeColor="White" NavigateUrl="~/MainPage.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        <asp:HyperLink ID="hplAbout" runat="server" BackColor="#003300" 
+                            ForeColor="White" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="hplContact" runat="server" ForeColor="White" 
+                            NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="hplLogin" runat="server" ForeColor="White" 
+                           NavigateUrl="~/Login.aspx" >Login</asp:HyperLink>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </asp:ContentPlaceHolder>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+                </tr>
+                <tr>
+                <td>
+                </td>
+                </tr>
+                <tr>
+                <td class="style9">
+                    </td>
+                
+                </tr>
+                </table>
+                </div>
+                &nbsp;<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Search websites</a></li>
+        <li><a href="#tabs-2">Search stores</a></li>
+        <li><a href="#tabs-3">Personalize account</a></li>
+        <li><a href="#tabs-4">Way to store</a></li>
+        <li><a href="#tabs-5">Cheaper goods</a></li>
+    </ul>
+    <div id="tabs-1">
+        <p>Find websites where you can find goods with least price that is available.&nbsp;</p>
+    </div>
+    <div id="tabs-2">
+        <p>Find the products where you can find goods and gas at a cheaper price compared to others.</p>
+    </div>
+    <div id="tabs-3">
+        <p>Personalize your account by adding necessary items in your profile and frequently check for the updates.&nbsp;</p>
+    </div>
+    <div id="tabs-4">
+        <p>Find the way to store in an easy way just by clicking a button and also have a choice of comparing different store distances.&nbsp;</p>
+    </div>
+    <div id="tabs-5">
+        <p>Find the goods with a cheaper price by comparing the goods in various websites and stores.&nbsp;</p>
+    </div>
+</div>
+                <div><table><tr>
+                <td id = "footer" class="style8">
+                <div align="center" style="color: #000000">
+                    <br />
+            <iframe
+    src="http://www.facebook.com/plugins/like.php?href=http://localhost:2591/Appointment%20System/Default.aspx" 
+    scrolling="no" 
+    frameborder="0" 
+    style="border-style: none; border-color: inherit; border-width: medium; overflow:hidden; width:218px; height:151px; float: left; color: #000000; margin-top: 0px;" 
+    allowTransparency="true" id="I1" name="I1">
+</iframe>                                                            
+&nbsp;&nbsp;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                            
+<iframe allowtransparency="true" frameborder="0" scrolling="no"
+        src="https://platform.twitter.com/widgets/tweet_button.html"
+        
+            
+                        style="width:122px; height:117px; float: left; clip: rect(auto, auto, auto, auto); margin-right: 11px; margin-top: 0px;" 
+                        id="I2" name="I2"></iframe> 
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    Copyrights reserved &copy; Smart Shoppy Website, 2012 - 2013</div>
+            </td>
+                </tr></table></div>
+    
+    </form>
+
+</body>
+</html>

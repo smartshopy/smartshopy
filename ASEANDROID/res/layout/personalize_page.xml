@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="297dp"
+        android:layout_height="88dp"
+        android:background="@drawable/background_image"
+        android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="UPDATES"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="YES" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="NO" />
+    </LinearLayout>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="304dp"
+    android:layout_height="71dp"
+    android:background="@drawable/background_image"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="E-MAIL"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="YES" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="NO" />
+    </LinearLayout>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="306dp"
+    android:layout_height="78dp"
+    android:background="@drawable/background_image"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="PHONE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="YES" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="NO" />
+    </LinearLayout>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/background_image"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="INTERESTED ITEM"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="121dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="40dp"
+    android:text="SUBMIT"
+    android:textColor="#ffffff" />
+
+</LinearLayout>

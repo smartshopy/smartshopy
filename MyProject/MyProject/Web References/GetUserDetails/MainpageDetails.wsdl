@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="methodgetUserdetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="methodgetUserdetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="methodgetUserdetailsResult" type="tns:Userdetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Userdetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="method_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_gender" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="methodgetUserdetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:methodgetUserdetails" />
+  </wsdl:message>
+  <wsdl:message name="methodgetUserdetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:methodgetUserdetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MainpageDetailsSoap">
+    <wsdl:operation name="methodgetUserdetails">
+      <wsdl:input message="tns:methodgetUserdetailsSoapIn" />
+      <wsdl:output message="tns:methodgetUserdetailsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MainpageDetailsSoap" type="tns:MainpageDetailsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="methodgetUserdetails">
+      <soap:operation soapAction="http://tempuri.org/methodgetUserdetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MainpageDetailsSoap12" type="tns:MainpageDetailsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="methodgetUserdetails">
+      <soap12:operation soapAction="http://tempuri.org/methodgetUserdetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MainpageDetails">
+    <wsdl:port name="MainpageDetailsSoap" binding="tns:MainpageDetailsSoap">
+      <soap:address location="http://localhost:2497/MainpageDetails.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MainpageDetailsSoap12" binding="tns:MainpageDetailsSoap12">
+      <soap12:address location="http://localhost:2497/MainpageDetails.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

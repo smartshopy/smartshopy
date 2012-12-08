@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vinod" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:background="@drawable/background_image"
+        android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/checkdetails"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:text="CHECK DETAILS" />
+       <Button
+        android:id="@+id/subscription"
+        android:layout_width="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="SUBSCRIPTION" />
+
+    
+    </LinearLayout>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:background="@drawable/background_image"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text=" HISTORY" />
+
+    <Button
+        android:id="@+id/personalize"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="PERSONALIZE" />
+</LinearLayout>
+ 
+
+</LinearLayout>

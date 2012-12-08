@@ -1,0 +1,6 @@
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\bin\MyProject.dll
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\bin\MyProject.pdb
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\obj\Debug\MyProject.dll
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\obj\Debug\MyProject.pdb
+C:\Users\Mahi\documents\visual studio 2010\Projects\MyProject\MyProject\bin\Artem.Google.pdb

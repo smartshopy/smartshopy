@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4414850-AD62-4138-B4F2-A9C76C33A9F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject</RootNamespace>
+    <AssemblyName>MyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Artem.Google, Version=6.0.0.0, Culture=neutral, PublicKeyToken=fc8d6190a3aeb01c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Bin (1)\Artem.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="GMaps, Version=4.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Bin (1)\GMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="3.jpg" />
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Amazonservice.asmx" />
+    <Content Include="Amazon_main.aspx" />
+    <Content Include="App_Data\Amazondatabase.mdf" />
+    <Content Include="App_Data\Amazondatabase_log.ldf">
+      <DependentUpon>Amazondatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Bestbuydatabase.mdf" />
+    <Content Include="App_Data\Bestbuydatabase_log.ldf">
+      <DependentUpon>Bestbuydatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Ebaydatabase.mdf" />
+    <Content Include="App_Data\Ebaydatabase_log.ldf">
+      <DependentUpon>Ebaydatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Background-LARGE.png" />
+    <Content Include="BestBuyService.asmx" />
+    <Content Include="BestBuysite.aspx" />
+    <Content Include="bin\Artem.Google.dll" />
+    <Content Include="bin\Artem.Google.pdb" />
+    <Content Include="bin\GeoCoding.dll" />
+    <Content Include="bin\GMaps.dll" />
+    <Content Include="bin\MyProject.dll" />
+    <Content Include="bin\MyProject.pdb" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="EbayService.asmx" />
+    <None Include="bin\Artem.Google.dll.refresh" />
+    <None Include="GeoCoding.dll.refresh" />
+    <None Include="GMaps.dll.refresh" />
+    <None Include="Web References\BBuyWebservice\BestBuydetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BBuyWebservice\BestBuyService.disco" />
+    <None Include="Web References\Ebaywebservice\Ebaydetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Ebaywebservice\EbayService.disco" />
+    <Content Include="GeoCoding.dll" />
+    <Content Include="Personalize.aspx" />
+    <Content Include="Persnext.aspx" />
+    <Content Include="GetProductId.aspx" />
+    <Content Include="Websiteimages\DI1525.jpg" />
+    <Content Include="Websiteimages\DXPS12.jpg" />
+    <Content Include="Websiteimages\DI14R.jpg" />
+    <Content Include="Websiteimages\DI15R.jpg" />
+    <Content Include="Ebaymain.aspx" />
+    <Content Include="ecommerce.jpg" />
+    <Content Include="edit e.bmp" />
+    <Content Include="Forgot Password.aspx" />
+    <Content Include="App_Data\Scripts\GeoCoding.dll" />
+    <Content Include="GMaps.dll" />
+    <Content Include="Gmapstore.aspx" />
+    <Content Include="Gmap\AjaxDemo\address.aspx" />
+    <Content Include="images\xxx%40x.com.jpg" />
+    <Content Include="images\koushik%40mail.com.jpg" />
+    <Content Include="images\karthik%40topper.com.jpg" />
+    <Content Include="images\mahirocks36%40yahoo.com.jpg" />
+    <Content Include="App_Data\Scripts\jquery-1.2.6.js" />
+    <Content Include="App_Data\Scripts\jquery-1.7.js" />
+    <Content Include="App_Data\Scripts\jQuery-1.8.2.js" />
+    <Content Include="App_Data\Scripts\jQuery-1.9.1.js" />
+    <Content Include="App_Data\Scripts\jQuery-1.9.js" />
+    <Content Include="App_Data\Scripts\jquery-17.js" />
+    <Content Include="App_Data\Scripts\jquery1.7CDN.js" />
+    <Content Include="Login.asmx" />
+    <Content Include="Login.aspx" />
+    <Content Include="loginpasswordchange.aspx" />
+    <Content Include="MainpageDetails.asmx" />
+    <Content Include="reg.jpg" />
+    <Content Include="Scripts\jquery-1.2.6.js" />
+    <Content Include="Scripts\jquery-1.7.js" />
+    <Content Include="Scripts\jQuery-1.8.2.js" />
+    <Content Include="Scripts\jQuery-1.9.1.js" />
+    <Content Include="Scripts\jQuery-1.9.js" />
+    <Content Include="Scripts\jquery1.7CDN.js" />
+    <Content Include="Startpage.aspx" />
+    <Content Include="Registrationservice.asmx" />
+    <Content Include="Resetpassword.asmx" />
+    <Content Include="ghij.jpg" />
+    <Content Include="StoredetailsService.asmx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Properties\Global.asax" />
+    <Content Include="App_Data\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="App_Data\Scripts\jquery-1.4.1.js" />
+    <Content Include="App_Data\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="MyMain.Master" />
+    <Content Include="Storepage.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Searchwebsite.aspx" />
+    <None Include="bin\GeoCoding.dll.refresh" />
+    <None Include="bin\GMaps.dll.refresh" />
+    <None Include="Gmap\AjaxDemo\App_WebReferences\MyService\GeoCoder.discomap" />
+    <None Include="Gmap\AjaxDemo\App_WebReferences\MyService\GeoCoder.wsdl" />
+    <Content Include="Gmap\AjaxDemo\web.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Amazonwebservice\Amazondetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Amazonwebservice\Amazonservice.wsdl" />
+    <None Include="Web References\Amazonwebservice\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\BBuyWebservice\BestBuyService.wsdl" />
+    <None Include="Web References\BBuyWebservice\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Ebaywebservice\EbayService.wsdl" />
+    <None Include="Web References\Ebaywebservice\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GetUserDetails\Userdetails1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\webservice.disco" />
+    <None Include="Web References\loginmethod\Login.disco" />
+    <None Include="Web References\passwordreset\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\passwordreset\Resetpassword.wsdl" />
+    <None Include="Web References\Regservice\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Regservice\Registrationservice.disco" />
+    <None Include="Web References\passwordreset\Resetpassword.disco" />
+    <None Include="Web References\GetUserDetails\MainpageDetails.disco" />
+    <None Include="Web References\Amazonwebservice\Amazonservice.disco" />
+    <None Include="Web References\Storewebservice\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Storewebservice\Storedetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Storewebservice\StoredetailsService.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="RegistrationSuccessful.aspx" />
+    <None Include="Web References\localhost\webservice.wsdl" />
+    <None Include="Web References\loginmethod\Login.wsdl" />
+    <None Include="Web References\loginmethod\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Regservice\Registrationservice.wsdl" />
+    <None Include="Web References\GetUserDetails\MainpageDetails.wsdl" />
+    <None Include="Web References\GetUserDetails\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Storewebservice\StoredetailsService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Amazondetails.cs" />
+    <Compile Include="Amazonservice.asmx.cs">
+      <DependentUpon>Amazonservice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Amazon_main.aspx.cs">
+      <DependentUpon>Amazon_main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Amazon_main.aspx.designer.cs">
+      <DependentUpon>Amazon_main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BestBuydetails.cs" />
+    <Compile Include="BestBuyService.asmx.cs">
+      <DependentUpon>BestBuyService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BestBuysite.aspx.cs">
+      <DependentUpon>BestBuysite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BestBuysite.aspx.designer.cs">
+      <DependentUpon>BestBuysite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ebaydetails.cs" />
+    <Compile Include="Ebaymain.aspx.cs">
+      <DependentUpon>Ebaymain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ebaymain.aspx.designer.cs">
+      <DependentUpon>Ebaymain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EbayService.asmx.cs">
+      <DependentUpon>EbayService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gmapstore.aspx.cs">
+      <DependentUpon>Gmapstore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gmapstore.aspx.designer.cs">
+      <DependentUpon>Gmapstore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gmap\AjaxDemo\address.aspx.cs">
+      <DependentUpon>address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainpageDetails.asmx.cs">
+      <DependentUpon>MainpageDetails.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyMain.Master.cs">
+      <DependentUpon>MyMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyMain.Master.designer.cs">
+      <DependentUpon>MyMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startpage.aspx.cs">
+      <DependentUpon>Startpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startpage.aspx.designer.cs">
+      <DependentUpon>Startpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productinfo.cs" />
+    <Compile Include="Forgot Password.aspx.cs">
+      <DependentUpon>Forgot Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgot Password.aspx.designer.cs">
+      <DependentUpon>Forgot Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.asmx.cs">
+      <DependentUpon>Login.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpasswordchange.aspx.cs">
+      <DependentUpon>loginpasswordchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpasswordchange.aspx.designer.cs">
+      <DependentUpon>loginpasswordchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Registerdet.cs" />
+    <Compile Include="Registrationservice.asmx.cs">
+      <DependentUpon>Registrationservice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resetpassword.asmx.cs">
+      <DependentUpon>Resetpassword.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegistrationSuccessful.aspx.cs">
+      <DependentUpon>RegistrationSuccessful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storedetails.cs" />
+    <Compile Include="StoredetailsService.asmx.cs">
+      <DependentUpon>StoredetailsService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Userdetails.cs" />
+    <Compile Include="Web References\Amazonwebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BBuyWebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Ebaywebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\loginmethod\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\passwordreset\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Regservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GetUserDetails\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Storepage.aspx.cs">
+      <DependentUpon>Storepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storepage.aspx.designer.cs">
+      <DependentUpon>Storepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Searchwebsite.aspx.cs">
+      <DependentUpon>Searchwebsite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Searchwebsite.aspx.designer.cs">
+      <DependentUpon>Searchwebsite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Storewebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Personalize.aspx.cs">
+      <DependentUpon>Personalize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personalize.aspx.designer.cs">
+      <DependentUpon>Personalize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Persnext.aspx.cs">
+      <DependentUpon>Persnext.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Persnext.aspx.designer.cs">
+      <DependentUpon>Persnext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetProductId.aspx.cs">
+      <DependentUpon>GetProductId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetProductId.aspx.designer.cs">
+      <DependentUpon>GetProductId.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:2497/Amazonservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Amazonwebservice\</RelPath>
+      <UpdateFromURL>http://localhost:2497/Amazonservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_Amazonwebservice_Amazonservice</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/BestBuyService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BBuyWebservice\</RelPath>
+      <UpdateFromURL>http://localhost:2497/BestBuyService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_BBuyWebservice_BestBuyService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/EbayService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Ebaywebservice\</RelPath>
+      <UpdateFromURL>http://localhost:2497/EbayService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_Ebaywebservice_EbayService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/Login.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\loginmethod\</RelPath>
+      <UpdateFromURL>http://localhost:2497/Login.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_loginmethod_Login1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/MainpageDetails.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GetUserDetails\</RelPath>
+      <UpdateFromURL>http://localhost:2497/MainpageDetails.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_Userdetails_MainpageDetails</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/Registrationservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Regservice\</RelPath>
+      <UpdateFromURL>http://localhost:2497/Registrationservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_Registrationservice_Registrationservice</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/Resetpassword.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\passwordreset\</RelPath>
+      <UpdateFromURL>http://localhost:2497/Resetpassword.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_passwordreset_Resetpassword</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/StoredetailsService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Storewebservice\</RelPath>
+      <UpdateFromURL>http://localhost:2497/StoredetailsService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_Storewebservice_StoredetailsService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2497/webservice/webservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:2497/webservice/webservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyProject_localhost_webservice</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="webservice\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2497</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

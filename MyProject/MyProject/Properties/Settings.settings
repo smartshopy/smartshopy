@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyProject.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MyProject_localhost_webservice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/webservice/webservice.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_loginmethod_Login1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/Login.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_Registrationservice_Registrationservice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/Registrationservice.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_passwordreset_Resetpassword" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/Resetpassword.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_Userdetails_MainpageDetails" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/MainpageDetails.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_Amazonwebservice_Amazonservice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/Amazonservice.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_Storewebservice_StoredetailsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/StoredetailsService.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_BBuyWebservice_BestBuyService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/BestBuyService.asmx</Value>
+    </Setting>
+    <Setting Name="MyProject_Ebaywebservice_EbayService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2497/EbayService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

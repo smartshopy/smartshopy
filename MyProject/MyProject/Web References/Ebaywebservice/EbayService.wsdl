@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="methodEbayinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EbayId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="methodEbayinfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="methodEbayinfoResult" type="tns:Ebaydetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Ebaydetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdModel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdPrice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="method_EbayProdSpec" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="methodEbayinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:methodEbayinfo" />
+  </wsdl:message>
+  <wsdl:message name="methodEbayinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:methodEbayinfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EbayServiceSoap">
+    <wsdl:operation name="methodEbayinfo">
+      <wsdl:input message="tns:methodEbayinfoSoapIn" />
+      <wsdl:output message="tns:methodEbayinfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EbayServiceSoap" type="tns:EbayServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="methodEbayinfo">
+      <soap:operation soapAction="http://tempuri.org/methodEbayinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EbayServiceSoap12" type="tns:EbayServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="methodEbayinfo">
+      <soap12:operation soapAction="http://tempuri.org/methodEbayinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EbayService">
+    <wsdl:port name="EbayServiceSoap" binding="tns:EbayServiceSoap">
+      <soap:address location="http://localhost:2497/EbayService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EbayServiceSoap12" binding="tns:EbayServiceSoap12">
+      <soap12:address location="http://localhost:2497/EbayService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
